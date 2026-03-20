@@ -323,7 +323,7 @@
 
             <!-- DECODER TAB -->
             <div id="decTab" class="glass-panel tab-content">
-                <label class="editor-label">Encrypted Source (Must have MH-HACK-VIP signature)</label>
+                <label class="editor-label">Encrypted Source (Must have mhhacks.pages.dev signature)</label>
                 <textarea id="encryptedInput" placeholder="Paste MH HACKS encrypted code here..."></textarea>
                 
                 <div class="action-row">
@@ -402,7 +402,7 @@
             // --- CONSTANTS ---
             // The master key is never written in plain text in the output.
             const MASTER_KEY = "MH_DIAMOND_2025_GOD_MODE_786"; 
-            const SIGNATURE = "MH-HACK-VIP";
+            const SIGNATURE = "mhhacks.pages.dev";
             const WATERMARK = "MH HACKS ENCRYPTER DONT TIME WATSTE DONT TRY AGAIN MY SON PAID SCOURCODE CONTACT ADMIN +923007624789";
 
             // --- LAYER 1: RC4 ---
@@ -578,7 +578,7 @@
             function decryptFlow() {
                 const encCode = document.getElementById('encryptedInput').value;
                 if(!encCode.includes(SIGNATURE)) {
-                    return alert("FATAL ERROR: Valid MH-HACK-VIP Signature Not Found! Cannot decode foreign scripts.");
+                    return alert("FATAL ERROR: Valid mhhacks.pages.dev Signature Not Found! Cannot decode foreign scripts.");
                 }
 
                 try {
